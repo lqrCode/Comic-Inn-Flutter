@@ -21,8 +21,7 @@ dependencies:
   dio: ^3.0.5 #ajax 
   flutter_slidable: ^0.5.4 #滑动显示操作按钮
   flutter_lqrui:
-    git:
-      url: https://github.com/CodeInn1024/flutter_lqrui.git
+    path: plugins/flutter_lqrui
 
   
   # jpush_flutter: ^0.1.0 #极光推送

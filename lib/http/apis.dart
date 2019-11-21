@@ -8,5 +8,7 @@ class LqrApis {
   static String userInfo = "/userInfo"; // 用户信息
 
   // ++++++++++++++++++++漫画++++++++++++++++++++
-  static String comicHome = "/comic/home"; // 用户信息
+  static String comicHome = "/comic/home"; 
+  static String comicDetail = "/comic/detail"; 
+  static String comicPlay = "/comic/play"; 
 }

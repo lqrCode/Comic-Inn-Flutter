@@ -142,14 +142,12 @@ class Lqr extends LqrDateTime with LqrBoxShadow, LqrEdgeInsets, LqrBorder, LqrTo
   });
 
   void init(BuildContext context) {
-    // MediaQuery.of(context);
     setDesignWHD(screenWidth, screenHeight, density: 3);
-    // ScreenUtil.instance = ScreenUtil(width: screenWidth, height: screenHeight)..init(context);
   }
 
   double size(double style) => ScreenUtil.getInstance().getAdapterSize(style);
-  double width(double style) => ScreenUtil.getInstance().getAdapterSize(style);
-  double height(double style) => ScreenUtil.getInstance().getAdapterSize(style);
+  double width(double style) => style == 0.1 ? ScreenUtil.getInstance().screenWidth : ScreenUtil.getInstance().getAdapterSize(style);
+  double height(double style) => style == 0.1 ? ScreenUtil.getInstance().screenHeight : ScreenUtil.getInstance().getAdapterSize(style);
 
   intervalWidget({double height}) => Container(height: this.height(height ?? 13), color: Color(0xfff4f5f7));
   dividerWidget() => Divider(height: this.width(1), color: Lqr.ui.dividerC1, thickness: 0.9);
